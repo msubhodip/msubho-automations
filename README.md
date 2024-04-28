@@ -8,6 +8,6 @@ This repo contains the automation tests
 - Install java jdk and configure JAVA_HOME as environment variable
 
 ### How to execute test Locally
- Use the command in terminal/command line : 
+ mvn clean install -Dbrowser="chrome" -Denvironment="dev" -Dcucumber.filter.tags="@test1"
  
- mvn clean install -Dbrowser="chrome" -Denvironment="dev" -Dcucumber.options="--tags @test2"
+ where @test1 is the testcase tag.
